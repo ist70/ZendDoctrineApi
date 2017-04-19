@@ -1,0 +1,18 @@
+<p><a href="/api/todo"> Получить список всех задач.</a></p>
+<p><a href="/api/todo/1"> Получить задачу по уникальному ID.</a></p>
+<form action="/api/todo" method="post">
+    <p> Создать новую задачу.</p>
+    <input type="text" name="title" value="">Заголовок<Br>
+    <input type="text" name="description" value="">Описание<Br>
+
+    <p><input type="submit"></p>
+</form>
+
+<form action="/api/todo" method="post">
+    <p> Обновить существующую задачу. </p>
+    <input name="id" value="1" hidden><br>
+    <input type="text" name="title" value="">Заголовок<Br>
+    <input type="text" name="description" value="">Описание<Br>
+
+    <p><input type="submit"></p>
+</form>

@@ -67,7 +67,7 @@ class Collection
     }
 
     /**
-     * @return description
+     * @return text
      */
     public function getDescription()
     {
@@ -79,7 +79,7 @@ class Collection
      */
     public function setDescription($description)
     {
-        $this->text = $description;
+        $this->description = $description;
     }
 
     /**
@@ -99,4 +99,28 @@ class Collection
         $this->created_at = new \DateTime("now");
     }
 
+
+    /**
+     * Set createdAt
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return Collection
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->created_at = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->created_at;
+    }
 }
